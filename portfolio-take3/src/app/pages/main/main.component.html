@@ -1,0 +1,133 @@
+<main class="mdl-layout__content">
+    <div class="site-content">
+        <div class="container">
+            <div class="mdl-grid site-max-width">
+                <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp welcome-card portfolio-card">
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">Welcome</h2>
+                    </div>
+                </div>
+            </div>
+            <section class="section--center mdl-grid site-max-width">
+                <div class="mdl-card mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone  mdl-shadow--4dp">
+                    <div class="mdl-card__title mdl-card--border">
+                        <h2 class="mdl-card__title-text">Introduction</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        Hi There! You have found my page! My name is Shaina Veloz and I have been a Software Developer for about 3 years. am originally from the
+                        Bronx,NY but I was also raised in Miami,FL. I graduated from the University of Central
+                        Florida with a Bachelors of Science degree in Psychology and I recently completed the UCF
+                        Coding Bootcamp with hopes of strengthening my coding skills and eventually being able to
+                        work within the Web Development field.
+
+                        <br>
+                    </div>
+                </div>
+            </section>
+
+            <div class="homepage-footer">
+                <section class="section--center mdl-grid site-max-width portfolio-section">
+                    <div class="canvas">
+                        <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+                            <div class="mdl-card__media"></div>
+                            <div class="mdl-card__title">
+                                <h2 class="mdl-card__title-text">Projects</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                <aside>
+                                    <button (click)="show('list')">To Do List</button>
+                                    <button (click)="show('crystal')">Crystal Game</button>
+                                    <!-- <button (click)="openGame()">Tic Tak Toe</button> -->
+                                </aside>
+                                <div class="project-container" [ngSwitch]="project">
+                                    <app-list *ngSwitchCase="'list'"></app-list>
+                                    <div *ngSwitchCase="'crystal'">
+                                        <div class="mdl-card__media">
+                                            <img class="article-image" src="/img/sailor_moon_2.jpg" border="0" alt="">
+                                        </div>
+                                        <div class="mdl-card__title">
+                                            <h2 class="mdl-card__title-text">Crystal Game</h2>
+                                        </div>
+                                        <div class="mdl-card__supporting-text">
+                                            An online game based on Sailor Moon.
+                                        </div>
+                                        <br>
+                                        <div class="mdl-card__actions mdl-card--border">
+                                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="http://sheltered-spire-81004.herokuapp.com/">
+                                                Learn More
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+                        <div class="mdl-card__media">
+                            <img class="article-image" src="/img/dog.jpg" border="0" alt="">
+                        </div>
+                        <div class="mdl-card__title">
+                            <h2 class="mdl-card__title-text">Doggie Daycare</h2>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            A website created to help you find your nearby pet hotels to take care of your lovable pets
+                            while you are away from home.
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+                        <div class="mdl-card__media">
+                            <img class="article-image" src="/img/sailor_moon_2.jpg" border="0" alt="">
+                        </div>
+                        <div class="mdl-card__title">
+                            <h2 class="mdl-card__title-text">Crystal Game</h2>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            An online game based on Sailor Moon.
+                        </div>
+                    </div> -->
+                    <!-- <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+                        <div class="mdl-card__media">
+                            <img class="article-image" src="/img/code2.jpg" border="0" alt="">
+                        </div>
+                        <div class="mdl-card__title">
+                            <h2 class="mdl-card__title-text">DevMatch</h2>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            An online platform to help companies find prospective employees by matching them to their
+                            company culture.
+                        </div>
+                    </div> -->
+                </section>
+
+                <section class="section--center mdl-grid site-max-width homepage-portfolio">
+                    <a class="mdl-button mdl-button--raised mdl-js-button mdl-js-ripple-effect mdl-button--accent"
+                       href="portfolio.html">View Portfolio</a>
+                </section>
+            </div>
+        </div>
+    </div>
+    <footer class="mdl-mini-footer">
+        <div class="footer-container">
+            <div class="mdl-logo">Copyright &copy; Shaina Veloz 2020</div>
+            <div>
+                <ul class="mdl-mini-footer__link-list">
+                    <li>
+                        <a href="https://github.com/shainaveloz?tab=overview&from=2016-08-01&to=2016-08-31&utf8=%E2%9C%93">
+                            <i class="fa fa-github fa-lg"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/shaina-veloz">
+                            <i class="fa fa-linkedin fa-lg"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://codepen.io/shae/">
+                            <i class="fa fa-codepen fa-lg"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</main>

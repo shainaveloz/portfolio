@@ -2,10 +2,10 @@
 /node_modules/
 /.env
 /material-portfolio_1-0-1
+/vendor/
 
 /bower_components/
 /npm-debug.log
 /sitemap.xml
 /Archive.zip
 /functions/node_modules
-/vendor/

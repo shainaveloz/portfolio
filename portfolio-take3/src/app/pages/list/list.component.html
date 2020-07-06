@@ -1,1 +1,14 @@
-<p>list works!</p>
+<div>
+    <input type="text" [formControl]="listItem"/>
+    <button (click)="edit === true ? update(listItem) : add(listItem)">{{edit ? 'Update': 'Add to List'}}</button>
+</div>
+<h3>Current List</h3>
+<ul>
+    <li *ngFor="let item of list; trackBy: trackByItems">
+        {{item.label}}
+        <button (click)="editItem(item)">Edit</button>
+        <button (click)="delete(item)">Delete</button>
+    </li>
+</ul>
+
+
